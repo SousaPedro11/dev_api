@@ -50,6 +50,8 @@ def lista_desenvolvedores():
         dados['id'] = posicao
         desenvolvedores.append(dados)
         resultado = jsonify({'status': 'sucesso', 'mensagem': 'Registro inserido'})
+    elif request.method == 'GET':
+        resultado = jsonify(desenvolvedores)
     return resultado
 
 
