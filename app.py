@@ -55,7 +55,5 @@ def lista_desenvolvedores():
     return resultado
 
 
-
-
 if __name__ == '__main__':
     app.run()
